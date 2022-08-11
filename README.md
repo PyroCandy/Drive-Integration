@@ -1,7 +1,7 @@
-# Calling Java from JavaScript
+# Google Drive Integration
 
-Typically, applications make server-side Java methods available to the client side by exposing them as end-points in a REST web service. Although this is a perfectly valid approach, this example shows an alternative way to call Java methods on the server without having to implement web services. This is possible thanks to Vaadin Flow, a framework that incorporates a set of Java classes that, not only allows you to build web UIs in plain Java, but also includes an automated communication mechanism that makes calling Java methods from JavaScript straightforward.
+The application requires Google Authentication for Drive access. Then proceeds to store the credentials acquired locally which is then used to access the Google Drive. 
 
-Read the full tutorial at https://vaadin.com/tutorials/calling-java-from-javascript
+The file names, date of modification and the ID of the files and folders are fetched and stored in the output/result.txt in JSON format.
 
-Or watch the video at https://www.youtube.com/watch?v=3l0Ed8x2nCg
+Once the Jetty Server is running, the user can click on the button to fetch changes from the Drive and make necessary changes to the JSON file. 
